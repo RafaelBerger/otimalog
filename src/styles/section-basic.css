@@ -1,0 +1,34 @@
+.section-container {
+  display: flex;
+  padding: 0 10rem;
+  padding-bottom: 12.5rem;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.image-content-reversed {
+  flex: 1;
+  display: flex;
+}
+
+.image-content-reversed img {
+  max-width: 500px;
+}
+
+.image-content img {
+  max-width: 500px;
+}
