@@ -48,7 +48,7 @@ function App() {
             precisam enviar quantidades menores de produtos, mas exigem a mesma
             segurança, rastreabilidade e pontualidade de uma carga completa.
           </p>
-          <ul>
+          <ul className="fractional-load-list">
             <li>Embarques diários</li>
             <li>Rapidez nas entregas</li>
             <li>Roteirização estratégica → menor custo e maior agilidade</li>
@@ -58,16 +58,6 @@ function App() {
               Armazém próprio estruturado (1.000 posições-palete, 7 docas)
             </li>
           </ul>
-        </ContentShowcase>
-
-        <ContentShowcase src={illustration1} isReversed={false}>
-          <h2>Teste</h2>
-          <p>Este é um teste de conteúdo.</p>
-        </ContentShowcase>
-
-        <ContentShowcase src={illustration1} isReversed={true}>
-          <h2>Teste</h2>
-          <p>Este é um teste de conteúdo.</p>
         </ContentShowcase>
       </main>
     </>

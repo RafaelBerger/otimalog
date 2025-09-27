@@ -3,3 +3,9 @@
   font-size: 1.875rem;
   margin-bottom: 10rem;
 }
+
+.fractional-load-list {
+  list-style-type: disc;
+  font-size: 1.25rem;
+  padding-left: 20px;
+}
