@@ -7,5 +7,38 @@
 .fractional-load-list {
   list-style-type: disc;
   font-size: 1.25rem;
+  font-weight: 400;
   padding-left: 20px;
+}
+/* =================== 2 ======================= */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.icon-item {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.icon-item p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 90px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.icon-text-group {
+  display: flex;
+  flex-direction: column;
 }

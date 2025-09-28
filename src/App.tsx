@@ -1,10 +1,15 @@
 import "./styles/header.css";
 import "./styles/section-basic.css";
 import "./styles/App.css";
+
 import logo from "./assets/logo.svg";
-import headerImg from "./assets/header-img.png";
 import illustration1 from "./assets/illustration-1.svg";
+import illustration2 from "./assets/illustration-2.svg";
+import illustration3 from "./assets/illustration-3.svg";
+import headerImg from "./assets/header-img.png";
+
 import ContentShowcase from "./components/ContentShowcase";
+import { Package, Truck, MapPin, VideoCamera } from "phosphor-react";
 
 function App() {
   return (
@@ -58,6 +63,49 @@ function App() {
               Armazém próprio estruturado (1.000 posições-palete, 7 docas)
             </li>
           </ul>
+        </ContentShowcase>
+
+        <ContentShowcase src={illustration2} isReversed={true}>
+          <h2>Armazém e Infraestrutura</h2>
+          <p>
+            Capacidade e Segurança para operações de todos os portes. <br />{" "}
+            <br /> Nossa estrutura foi pensada para garantir eficiência em todas
+            as etapas da movimentação de cargas. O armazém da Otima.log é
+            equipado para suportar altos volumes com acesso seguro, vigilância
+            constante e processos bem definidos.
+          </p>
+          <div className="icon-container">
+            <div className="icon-item">
+              <Package size={80} color={"#fff"} />
+              <div className="icon-text-group">
+                <p>
+                  <b>1000</b> <br />
+                  posições-palete
+                </p>
+              </div>
+            </div>
+            <div className="icon-item">
+              <Truck size={80} color={"#fff"} />
+              <div className="icon-text-group">
+                <p>
+                  <b>7</b> <br />
+                  docas para carga e descarga
+                </p>
+              </div>
+            </div>
+            <div className="icon-item">
+              <MapPin size={80} color={"#fff"} />
+              <p>Pátio amplo, seguro e pavimentado</p>
+            </div>
+            <div className="icon-item">
+              <VideoCamera size={80} color={"#fff"} />
+              <p>Monitoramento 24h por câmeras</p>
+            </div>
+          </div>
+        </ContentShowcase>
+
+        <ContentShowcase src={illustration3} isReversed={false}>
+          <p></p>
         </ContentShowcase>
       </main>
     </>
