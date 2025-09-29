@@ -11,12 +11,23 @@
 .text-content h2 {
   font-size: 1.5rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .text-content p {
   font-size: 1.25rem;
-  font-weight: normal;
+  font-weight: 400;
+}
+
+.image-content-reversed {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.image-content-reversed img {
+  max-width: 600px;
 }
 
 .image-content {
@@ -26,15 +37,6 @@
   align-items: center;
 }
 
-.image-content-reversed {
-  flex: 1;
-  display: flex;
-}
-
-.image-content-reversed img {
-  max-width: 500px;
-}
-
 .image-content img {
-  max-width: 500px;
+  max-width: 600px;
 }

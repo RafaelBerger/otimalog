@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
-  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 
@@ -21,8 +21,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  font-weight: 700;
+}
 p {
   text-align: justify;
+  font-weight: 400;
 }
 
 html,
