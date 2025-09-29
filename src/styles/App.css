@@ -42,3 +42,54 @@
   display: flex;
   flex-direction: column;
 }
+
+/* =================== 3 ======================= */
+
+.delivery-planning-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.delivery-planning-benefits-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.individual-benefit p {
+  width: 80%;
+  text-align: center;
+}
+
+/* =================== 4 ======================= */
+
+.expedition-tech-text p {
+  margin-bottom: 2rem;
+}
+
+.expedition-tech-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.expedition-tech-list p {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.flashy-number {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+/* =================== 5 ======================= */
