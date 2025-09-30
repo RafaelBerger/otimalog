@@ -1,12 +1,14 @@
 import "./styles/header.css";
-import "./styles/section-basic.css";
 import "./styles/App.css";
+import "./styles/about-section.css";
 
 import logo from "./assets/logo.svg";
 import illustration1 from "./assets/illustration-1.svg";
 import illustration2 from "./assets/illustration-2.svg";
 import illustration3 from "./assets/illustration-3.svg";
 import illustration4 from "./assets/illustration-4.svg";
+import illustration5 from "./assets/illustration-5.svg";
+import illustration6 from "./assets/illustration-6.svg";
 import headerImg from "./assets/header-img.png";
 
 import ContentShowcase from "./components/ContentShowcase";
@@ -16,6 +18,15 @@ import {
   MapPin,
   VideoCamera,
   CheckCircle,
+  DeviceMobile,
+  ClipboardText,
+  Warning,
+  MapPinLine,
+  ListChecks,
+  Thermometer,
+  FileText,
+  ChartBar,
+  WarningCircle,
 } from "phosphor-react";
 
 function App() {
@@ -123,15 +134,15 @@ function App() {
             </p>
             <div className="delivery-planning-benefits-container">
               <div className="individual-benefit">
-                <CheckCircle size={32} color="#ffffff" weight="fill" />
+                <CheckCircle size={63} color="#ffffff" weight="fill" />
                 <p>Roteiros flexíveis conforme a necessidade do cliente</p>
               </div>
               <div className="individual-benefit">
-                <CheckCircle size={32} color="#ffffff" weight="fill" />
+                <CheckCircle size={63} color="#ffffff" weight="fill" />
                 <p>Planejamento com base na capacidade de frota</p>
               </div>
               <div className="individual-benefit">
-                <CheckCircle size={32} color="#ffffff" weight="fill" />
+                <CheckCircle size={63} color="#ffffff" weight="fill" />
                 <p>Respeito às restrições e particularidades de cada região</p>
               </div>
             </div>
@@ -163,6 +174,91 @@ function App() {
               <b className="flashy-number">3</b> Processos automatizados de
               recebimento e expedição
             </p>
+          </div>
+        </ContentShowcase>
+        <ContentShowcase src={illustration5} isReversed={false}>
+          <div>
+            <h2>Torre de Controle e Gestão à vista</h2>
+            <p>
+              A Otima.log opera com uma Torre de Controle moderna e integrada,
+              capaz de oferecer visibilidade completa da operação, status das
+              entregas em tempo real e controle detalhado das etapas do
+              transporte. Essa estrutura permite que a gestão logística do
+              cliente seja feita com previsibilidade, rastreabilidade e
+              segurança, reduzindo riscos e melhorando a performance das
+              entregas.
+            </p>
+          </div>
+          <div className="control-tower-benefits-container">
+            <div className="individual-benefit">
+              <DeviceMobile size={64} color="#ffffff" weight="regular" />
+              <p>Integração com o mobile dos motoristas</p>
+            </div>
+            <div className="individual-benefit">
+              <ClipboardText size={64} color="#ffffff" weight="regular" />
+              <p>Previsibilidade das próximas entregas</p>
+            </div>
+            <div className="individual-benefit">
+              <Warning size={64} color="#ffffff" weight="regular" />
+              <p>Alertas de anomalias operacionais</p>
+            </div>
+            <div className="individual-benefit">
+              <MapPinLine size={64} color="#ffffff" weight="regular" />
+              <p>Check-in e Check-out via geolocalização</p>
+            </div>
+            <div className="individual-benefit">
+              <CheckCircle size={64} color="#ffffff" weight="regular" />
+              <p>Status de entregas atualizado em tempo real</p>
+            </div>
+            <div className="individual-benefit">
+              <ListChecks size={64} color="#ffffff" weight="regular" />
+              <p>Gestão de ocorrências sistematizadas</p>
+            </div>
+            <div className="individual-benefit">
+              <Thermometer size={64} color="#ffffff" weight="regular" />
+              <p>Rastreabilidade de temperatura (quando necessário)</p>
+            </div>
+            <div className="individual-benefit">
+              <FileText size={64} color="#ffffff" weight="regular" />
+              <p>Comprovante de entrega digital com assinatura + coordenadas</p>
+            </div>
+            <div className="individual-benefit">
+              <ChartBar size={64} color="#ffffff" weight="regular" />
+              <p>Painéis visuais com indicadores logísticos atualizados</p>
+            </div>
+          </div>
+        </ContentShowcase>
+        <ContentShowcase src={illustration6} isReversed={true}>
+          <h2>Gerenciamento de Risco e Gestão Ótima</h2>
+          <p>
+            Aliamos tecnologia, gestão e experiência para garantir mais
+            segurança e menos imprevistos em toda a cadeia logística. Com uma
+            liderança atuante e estrutura de apoio especializada, antecipamos
+            riscos e entregamos soluções.
+          </p>
+          <div className="management-risk-container">
+            <div>
+              <div className="title-icon-container">
+                <WarningCircle size={64} color="#ffffff" weight="regular" />
+                <h3>Gerenciamento de Risco:</h3>
+              </div>
+              <ul>
+                <li>Equipe especializada em segurança e rastreamento </li>
+                <li>Monitoramento ativo da frota e das operações </li>
+                <li>Prevenção contra perdas e incidentes</li>
+              </ul>
+            </div>
+            <div>
+              <div className="title-icon-container">
+                <Truck size={64} color="#ffffff" weight="regular" />
+                <h3>Gestão Jangaz:</h3>
+              </div>
+              <ul>
+                <li>Direção experiente e capacitada</li>
+                <li>Resposta rápida aos desafios da operação</li>
+                <li>Comprometimento com a performance do cliente</li>
+              </ul>
+            </div>
           </div>
         </ContentShowcase>
       </main>

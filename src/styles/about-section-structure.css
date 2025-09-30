@@ -4,6 +4,10 @@
   padding-bottom: 12.5rem;
 }
 
+.section-container h2 {
+  padding-bottom: 2rem;
+}
+
 .text-content {
   flex: 1;
 }
