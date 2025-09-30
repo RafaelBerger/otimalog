@@ -1,4 +1,4 @@
-import "../styles/section-basic.css";
+import "../styles/about-section-structure.css";
 
 interface ContentShowcaseProps {
   children: React.ReactNode;

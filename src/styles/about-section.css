@@ -1,0 +1,120 @@
+.main-title {
+  text-align: center;
+  font-size: 1.875rem;
+  margin-bottom: 10rem;
+}
+/* =================== Carga Fracionada com a OTIMA.LOG ======================= */
+.fractional-load-list {
+  list-style-type: disc;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-left: 20px;
+}
+/* =================== Armazém e Infraestrutura ======================= */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.icon-item {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.icon-item p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 90px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.icon-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =================== Roteirização e Planejamento de Entregas ======================= */
+
+.delivery-planning-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.delivery-planning-benefits-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.individual-benefit p {
+  width: 80%;
+  text-align: center;
+}
+
+/* =================== Expedição com Tecnologia ======================= */
+
+.expedition-tech-text p {
+  margin-bottom: 2rem;
+}
+
+.expedition-tech-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.expedition-tech-list p {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.flashy-number {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+/* =================== Torre de Controle e Gestão à vista ======================= */
+
+.control-tower-benefits-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.individual-benefit {
+  padding-bottom: 1rem;
+}
+/* =================== Gerenciamento de Risco e Gestão Ótima ======================= */
+
+.management-risk-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.title-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
