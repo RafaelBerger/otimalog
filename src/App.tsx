@@ -15,6 +15,7 @@ import headerImg from "./assets/header-img.png";
 
 import ContentShowcase from "./components/ContentShowcase";
 import ContactCard from "./components/ContactCard";
+import Navbar from "./components/Navbar";
 
 import {
   Package,
@@ -38,7 +39,8 @@ import {
 function App() {
   return (
     <>
-      <header className="app-header">
+      <Navbar />
+      <header className="app-header" id="home">
         <div className="header-info">
           <div className="header-presentation">
             <img src={logo} alt="LOGO" />
@@ -56,7 +58,7 @@ function App() {
             </p>
           </div>
           <div className="header-contact-btn">
-            <button>Nos Contate</button>
+            <a href="#contact">Nos Contate</a>
           </div>
         </div>
         <div className="header-image">
@@ -64,7 +66,7 @@ function App() {
         </div>
       </header>
       {/* about section */}
-      <main>
+      <main id="about">
         <h2 className="main-title">Sobre nós</h2>
 
         <ContentShowcase src={illustration1} isReversed={false}>
@@ -269,7 +271,7 @@ function App() {
         </ContentShowcase>
       </main>
       {/* location section*/}
-      <section>
+      <section id="location">
         <h2 className="main-title">Área de Atendimento</h2>
         <div className="location-container">
           <div className="map-half">
@@ -321,7 +323,7 @@ function App() {
         </div>
       </section>
 
-      <section>
+      <section id="contact">
         <div className="contact-section-container">
           <div className="contact-text-half">
             <h1>Nos Contate</h1>
