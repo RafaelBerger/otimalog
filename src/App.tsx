@@ -1,6 +1,7 @@
 import "./styles/header.css";
 import "./styles/App.css";
 import "./styles/about-section.css";
+import "./styles/location.css";
 
 import logo from "./assets/logo.svg";
 import illustration1 from "./assets/illustration-1.svg";
@@ -57,7 +58,7 @@ function App() {
           <img src={headerImg} alt="Truck Image" />
         </div>
       </header>
-
+      {/* about section */}
       <main>
         <h2 className="main-title">Sobre nós</h2>
 
@@ -262,6 +263,58 @@ function App() {
           </div>
         </ContentShowcase>
       </main>
+      {/* location section*/}
+      <section>
+        <h2 className="main-title">Área de Atendimento</h2>
+        <div className="location-container">
+          <div className="map-half">
+            <h2>Encontre-nos no mapa</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13046.924358748076!2d-46.45899923722282!3d-23.418246701059125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8a2ff7206689%3A0x69496411e34d48f9!2sRua%20Manoel%20Fernandes%20Garrote%2C%20588%20-%20Jardim%20Novo%20Portugal%2C%20Guarulhos%20-%20SP%2C%2007160-520!5e0!3m2!1spt-BR!2sbr!4v1759256697644!5m2!1spt-BR!2sbr"
+              className="map-iframe"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="location-info-half">
+            <p>
+              Atendemos todo o estado de São Paulo com foco em performance e
+              cobertura estratégica. Nossa base próxima ao Aeroporto de
+              Guarulhos garante mais agilidade nas entregas e coletas,
+              conectando com rapidez as principais regiões comerciais e
+              industriais. Expandimos também nossa presença no Norte do país,
+              com operações em Rondônia e Acre. Além disso, já projetamos
+              ampliar nossa atuação futura para o Centro-Oeste
+            </p>
+            <div>
+              <h3>Regiões Atendidas</h3>
+              <ul>
+                <li>São Paulo (Capital e Grande SP)</li>
+                <li>Litoral Sul</li>
+                <li>Vale do Ribeira</li>
+                <li>Vale do Paraíba</li>
+                <li>Litoral Norte</li>
+                <li>Rondônia (Porto Velho, Ji-Paraná)</li>
+                <li>Acre (Rio Branco)</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Bases Operacionais</h3>
+              <ul>
+                <li>
+                  Guarulhos/SP - Rua Manoel Fernandes Garrote, 588 - Jardim Novo
+                  Portugal
+                </li>
+                <li>
+                  Porto Velho/RO - Rua da Felicidade, 4422 - Areal da Floresta
+                </li>
+                <li>Ji-Paraná/RO - Rua Santa Clara, 1067 - Primavera</li>
+                <li>Rio Branco/AC - Via Chico Mendes, 2872 - Triângulo Novo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
