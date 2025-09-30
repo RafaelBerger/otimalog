@@ -2,6 +2,7 @@ import "./styles/header.css";
 import "./styles/App.css";
 import "./styles/about-section.css";
 import "./styles/location.css";
+import "./styles/contact-section.css";
 
 import logo from "./assets/logo.svg";
 import illustration1 from "./assets/illustration-1.svg";
@@ -13,6 +14,8 @@ import illustration6 from "./assets/illustration-6.svg";
 import headerImg from "./assets/header-img.png";
 
 import ContentShowcase from "./components/ContentShowcase";
+import ContactCard from "./components/ContactCard";
+
 import {
   Package,
   Truck,
@@ -28,6 +31,8 @@ import {
   FileText,
   ChartBar,
   WarningCircle,
+  WhatsappLogo,
+  EnvelopeSimple,
 } from "phosphor-react";
 
 function App() {
@@ -312,6 +317,36 @@ function App() {
                 <li>Rio Branco/AC - Via Chico Mendes, 2872 - Triângulo Novo</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="contact-section-container">
+          <div className="contact-text-half">
+            <h1>Nos Contate</h1>
+            <p>
+              Entre em contato e descubra como a Ótima Log pode ser a parceira
+              estratégica que sua empresa precisa. Especialistas em fretes
+              fracionados, oferecemos agilidade, rastreabilidade e controle para
+              que sua operação cresça com eficiência e segurança.
+            </p>
+          </div>
+          <div className="contact-card-half">
+            <ContactCard
+              Icon={WhatsappLogo}
+              contactMethod="WhatsApp"
+              contactMethodInfo="(14) 98158-3077"
+              buttonText="Mandar mensagem"
+              href="https://wa.me/5514981583077"
+            />
+            <ContactCard
+              Icon={EnvelopeSimple}
+              contactMethod="E-mail"
+              contactMethodInfo="comercial@otimalog.com.br"
+              buttonText="Mandar email"
+              href="mailto:comercial@otimalog.com.br"
+            />
           </div>
         </div>
       </section>
