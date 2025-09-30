@@ -1,0 +1,49 @@
+.contact-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #fff;
+  color: var(--primary-color);
+  padding: 1.5rem 3rem;
+  border-radius: 15px;
+}
+
+.contact-card-texts h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+}
+
+.contact-card-texts p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0;
+}
+
+.contact-card-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  width: 80%;
+  height: 3rem;
+  padding: 0 1.5rem;
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: none;
+  font-size: 1.2em;
+  font-weight: 550;
+  border: solid 2px var(--primary-color);
+}
+
+.contact-card-container a:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
