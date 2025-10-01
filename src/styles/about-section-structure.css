@@ -1,6 +1,6 @@
 .section-container {
   display: flex;
-  padding: 0 10rem;
+  padding: 0 15rem;
   padding-bottom: 12.5rem;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .text-content p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 

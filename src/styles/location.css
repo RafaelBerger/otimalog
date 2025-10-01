@@ -1,7 +1,7 @@
 .location-container {
   display: flex;
   flex-direction: row-reverse;
-  padding: 0 10rem;
+  padding: 0 15rem;
   padding-bottom: 12.5rem;
 }
 
@@ -21,6 +21,8 @@
   justify-content: center;
   align-items: flex-start;
   padding-right: 4rem;
+
+  font-size: 1.125rem;
 }
 
 .map-iframe {
