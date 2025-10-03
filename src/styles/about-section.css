@@ -118,3 +118,133 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 440px) {
+  .main-title {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+  }
+
+  /* =================== Carga Fracionada com a OTIMA.LOG ======================= */
+  .fractional-load-list {
+    text-align: start;
+    list-style-type: disc;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  /* =================== Armazém e Infraestrutura ======================= */
+  .icon-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas no desktop */
+    justify-items: center; /* centraliza horizontalmente os itens */
+    align-items: start; /* alinha os itens ao topo */
+    margin-top: 5rem;
+  }
+
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .icon-item p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 90px;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+
+  .icon-text-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* =================== Roteirização e Planejamento de Entregas ======================= */
+
+  .delivery-planning-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .delivery-planning-benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .individual-benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .individual-benefit p {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* =================== Expedição com Tecnologia ======================= */
+
+  .expedition-tech-text p {
+    margin-bottom: 2rem;
+  }
+
+  .expedition-tech-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .expedition-tech-list p {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .flashy-number {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+
+  /* =================== Torre de Controle e Gestão à vista ======================= */
+
+  .control-tower-benefits-container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .individual-benefit {
+    padding-bottom: 1rem;
+  }
+  /* =================== Gerenciamento de Risco e Gestão Ótima ======================= */
+
+  .management-risk-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 3rem;
+    text-align: start;
+  }
+
+  .title-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

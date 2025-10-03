@@ -134,14 +134,14 @@
 
   .header-presentation p {
     font-size: clamp(0.8rem, 3vw, 1.1rem);
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     text-align: justify;
     word-break: break-word;
   }
 
   .header-contact-btn {
     padding-left: 0;
-    width: 80%;
+    width: 50%;
     margin-top: 1vw;
     display: flex;
     justify-content: center;

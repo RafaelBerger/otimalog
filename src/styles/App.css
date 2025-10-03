@@ -2,3 +2,12 @@
   background-image: url(../assets/bg.svg);
   background-repeat: round;
 }
+
+@media (max-width: 440px) {
+  #bg {
+    background-image: url(../assets/bg-mobile.svg);
+    background-repeat: repeat-y; /* ou repeat-x/repeat-y, dependendo do efeito */
+    background-position: top center;
+    background-size: 100% auto;
+  }
+}
