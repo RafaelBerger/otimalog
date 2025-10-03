@@ -27,3 +27,34 @@
 
   gap: 2rem;
 }
+
+@media (max-width: 440px) {
+  .contact-section-container {
+    flex-direction: column;
+    padding: 4rem 0.2rem 8rem 0.2rem;
+
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .contact-text-half {
+    flex: unset;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: left;
+  }
+
+  .contact-text-half p {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-card-half {
+    flex: unset;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
