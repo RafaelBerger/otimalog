@@ -13,6 +13,10 @@ import illustration3 from "./assets/illustration-3.svg";
 import illustration4 from "./assets/illustration-4.svg";
 import illustration5 from "./assets/illustration-5.svg";
 import illustration6 from "./assets/illustration-6.svg";
+// import bg2560 from "./assets/bg-svg.svg";
+// import bg2560Second from "./assets/bg-svg-second.svg";
+// import bg1920 from "./assets/bg-svg-1920.svg";
+// import bg1920Second from "./assets/bg-svg-1920-second.svg";
 import headerImg from "./assets/header-img.png";
 
 import ContentShowcase from "./components/ContentShowcase";
@@ -69,74 +73,91 @@ function App() {
           <img src={headerImg} alt="Truck Image" />
         </div>
       </header>
+      {/* <img src={bg2560} className="svg-2560" alt="" />
+      <img src={bg1920} className="svg-1920" alt="" />
+      <img src={bg2560Second} className="svg-2560-second" alt="" />
+      <img src={bg1920Second} className="svg-1920-second" alt="" /> */}
       <div id="body-container">
         {/* about section */}
         <main id="about" className="ultrawide-responsiveness">
-          <h2 className="main-title">Sobre nós</h2>
-
-          <ContentShowcase src={illustration1} isReversed={false}>
-            <h2>Carga Fracionada com a OTIMA.LOG</h2>
-            <p>
-              Na carga fracionada, diferentes mercadorias de várias empresas
-              compartilham o mesmo veículo. Isso significa mais economia,
-              eficiência e rapidez, sem a necessidade de lotar um caminhão
-              inteiro para realizar a entrega. É a solução ideal para empresas
-              que precisam enviar quantidades menores de produtos, mas exigem a
-              mesma segurança, rastreabilidade e pontualidade de uma carga
-              completa.
-            </p>
-            <ul className="fractional-load-list">
-              <li>Embarques diários</li>
-              <li>Rapidez nas entregas</li>
-              <li>Roteirização estratégica → menor custo e maior agilidade</li>
-              <li>Monitoramento em tempo real via torre de controle</li>
-              <li>Segurança e gestão de risco ativa</li>
-              <li>
-                Armazém próprio estruturado (1.000 posições-palete, 7 docas)
-              </li>
-            </ul>
-          </ContentShowcase>
-
-          <ContentShowcase src={illustration2} isReversed={true}>
-            <h2>Armazém e Infraestrutura</h2>
-            <p>
-              Capacidade e Segurança para operações de todos os portes. <br />{" "}
-              <br /> Nossa estrutura foi pensada para garantir eficiência em
-              todas as etapas da movimentação de cargas. O armazém da Otima.log
-              é equipado para suportar altos volumes com acesso seguro,
-              vigilância constante e processos bem definidos.
-            </p>
-            <div className="icon-container">
-              <div className="icon-item">
-                <Package size={80} color={"#fff"} />
-                <div className="icon-text-group">
-                  <p>
-                    <b>1000</b> <br />
-                    posições-palete
-                  </p>
+          <div className="bg">
+            <h2 className="main-title">Sobre nós</h2>
+            <ContentShowcase
+              src={illustration1}
+              isReversed={false}
+              isLighter={true}
+            >
+              <h2>Carga Fracionada com a OTIMA.LOG</h2>
+              <p>
+                Na carga fracionada, diferentes mercadorias de várias empresas
+                compartilham o mesmo veículo. Isso significa mais economia,
+                eficiência e rapidez, sem a necessidade de lotar um caminhão
+                inteiro para realizar a entrega. É a solução ideal para empresas
+                que precisam enviar quantidades menores de produtos, mas exigem
+                a mesma segurança, rastreabilidade e pontualidade de uma carga
+                completa.
+              </p>
+              <ul className="fractional-load-list">
+                <li>Embarques diários</li>
+                <li>Rapidez nas entregas</li>
+                <li>
+                  Roteirização estratégica → menor custo e maior agilidade
+                </li>
+                <li>Monitoramento em tempo real via torre de controle</li>
+                <li>Segurança e gestão de risco ativa</li>
+                <li>
+                  Armazém próprio estruturado (1.000 posições-palete, 7 docas)
+                </li>
+              </ul>
+            </ContentShowcase>
+            <ContentShowcase
+              src={illustration2}
+              isReversed={true}
+              isLighter={true}
+            >
+              <h2>Armazém e Infraestrutura</h2>
+              <p>
+                Capacidade e Segurança para operações de todos os portes. <br />{" "}
+                <br /> Nossa estrutura foi pensada para garantir eficiência em
+                todas as etapas da movimentação de cargas. O armazém da
+                Otima.log é equipado para suportar altos volumes com acesso
+                seguro, vigilância constante e processos bem definidos.
+              </p>
+              <div className="icon-container">
+                <div className="icon-item">
+                  <Package size={80} color={"#fff"} />
+                  <div className="icon-text-group">
+                    <p>
+                      <b>1000</b> <br />
+                      posições-palete
+                    </p>
+                  </div>
+                </div>
+                <div className="icon-item">
+                  <Truck size={80} color={"#fff"} />
+                  <div className="icon-text-group">
+                    <p>
+                      <b>7</b> <br />
+                      docas para carga e descarga
+                    </p>
+                  </div>
+                </div>
+                <div className="icon-item">
+                  <MapPin size={80} color={"#fff"} />
+                  <p>Pátio amplo, seguro e pavimentado</p>
+                </div>
+                <div className="icon-item">
+                  <VideoCamera size={80} color={"#fff"} />
+                  <p>Monitoramento 24h por câmeras</p>
                 </div>
               </div>
-              <div className="icon-item">
-                <Truck size={80} color={"#fff"} />
-                <div className="icon-text-group">
-                  <p>
-                    <b>7</b> <br />
-                    docas para carga e descarga
-                  </p>
-                </div>
-              </div>
-              <div className="icon-item">
-                <MapPin size={80} color={"#fff"} />
-                <p>Pátio amplo, seguro e pavimentado</p>
-              </div>
-              <div className="icon-item">
-                <VideoCamera size={80} color={"#fff"} />
-                <p>Monitoramento 24h por câmeras</p>
-              </div>
-            </div>
-          </ContentShowcase>
-
-          <ContentShowcase src={illustration3} isReversed={false}>
+            </ContentShowcase>
+          </div>
+          <ContentShowcase
+            src={illustration3}
+            isReversed={false}
+            isLighter={false}
+          >
             <h2>Roteirização e Planejamento de Entregas</h2>
             <div className="delivery-planning-section">
               <p>
@@ -165,7 +186,11 @@ function App() {
             </div>
           </ContentShowcase>
 
-          <ContentShowcase src={illustration4} isReversed={true}>
+          <ContentShowcase
+            src={illustration4}
+            isReversed={true}
+            isLighter={false}
+          >
             <div className="expedition-tech-text">
               <h2>Expedição com Tecnologia</h2>
               <p>
@@ -192,93 +217,103 @@ function App() {
               </p>
             </div>
           </ContentShowcase>
-          <ContentShowcase src={illustration5} isReversed={false}>
-            <div>
-              <h2>Torre de Controle e Gestão à vista</h2>
-              <p>
-                A Otima.log opera com uma Torre de Controle moderna e integrada,
-                capaz de oferecer visibilidade completa da operação, status das
-                entregas em tempo real e controle detalhado das etapas do
-                transporte. Essa estrutura permite que a gestão logística do
-                cliente seja feita com previsibilidade, rastreabilidade e
-                segurança, reduzindo riscos e melhorando a performance das
-                entregas.
-              </p>
-            </div>
-            <div className="control-tower-benefits-container">
-              <div className="individual-benefit">
-                <DeviceMobile size={64} color="#ffffff" weight="regular" />
-                <p>Integração com o mobile dos motoristas</p>
-              </div>
-              <div className="individual-benefit">
-                <ClipboardText size={64} color="#ffffff" weight="regular" />
-                <p>Previsibilidade das próximas entregas</p>
-              </div>
-              <div className="individual-benefit">
-                <Warning size={64} color="#ffffff" weight="regular" />
-                <p>Alertas de anomalias operacionais</p>
-              </div>
-              <div className="individual-benefit">
-                <MapPinLine size={64} color="#ffffff" weight="regular" />
-                <p>Check-in e Check-out via geolocalização</p>
-              </div>
-              <div className="individual-benefit">
-                <CheckCircle size={64} color="#ffffff" weight="regular" />
-                <p>Status de entregas atualizado em tempo real</p>
-              </div>
-              <div className="individual-benefit">
-                <ListChecks size={64} color="#ffffff" weight="regular" />
-                <p>Gestão de ocorrências sistematizadas</p>
-              </div>
-              <div className="individual-benefit">
-                <Thermometer size={64} color="#ffffff" weight="regular" />
-                <p>Rastreabilidade de temperatura (quando necessário)</p>
-              </div>
-              <div className="individual-benefit">
-                <FileText size={64} color="#ffffff" weight="regular" />
+          <div className="bg">
+            <ContentShowcase
+              src={illustration5}
+              isReversed={false}
+              isLighter={true}
+            >
+              <div>
+                <h2>Torre de Controle e Gestão à vista</h2>
                 <p>
-                  Comprovante de entrega digital com assinatura + coordenadas
+                  A Otima.log opera com uma Torre de Controle moderna e
+                  integrada, capaz de oferecer visibilidade completa da
+                  operação, status das entregas em tempo real e controle
+                  detalhado das etapas do transporte. Essa estrutura permite que
+                  a gestão logística do cliente seja feita com previsibilidade,
+                  rastreabilidade e segurança, reduzindo riscos e melhorando a
+                  performance das entregas.
                 </p>
               </div>
-              <div className="individual-benefit">
-                <ChartBar size={64} color="#ffffff" weight="regular" />
-                <p>Painéis visuais com indicadores logísticos atualizados</p>
-              </div>
-            </div>
-          </ContentShowcase>
-          <ContentShowcase src={illustration6} isReversed={true}>
-            <h2>Gerenciamento de Risco e Gestão Ótima</h2>
-            <p>
-              Aliamos tecnologia, gestão e experiência para garantir mais
-              segurança e menos imprevistos em toda a cadeia logística. Com uma
-              liderança atuante e estrutura de apoio especializada, antecipamos
-              riscos e entregamos soluções.
-            </p>
-            <div className="management-risk-container">
-              <div>
-                <div className="title-icon-container">
-                  <WarningCircle size={64} color="#ffffff" weight="regular" />
-                  <h3>Gerenciamento de Risco:</h3>
+              <div className="control-tower-benefits-container">
+                <div className="individual-benefit">
+                  <DeviceMobile size={64} color="#ffffff" weight="regular" />
+                  <p>Integração com o mobile dos motoristas</p>
                 </div>
-                <ul>
-                  <li>Equipe especializada em segurança e rastreamento </li>
-                  <li>Monitoramento ativo da frota e das operações </li>
-                  <li>Prevenção contra perdas e incidentes</li>
-                </ul>
-              </div>
-              <div>
-                <div className="title-icon-container">
-                  <Truck size={64} color="#ffffff" weight="regular" />
-                  <h3>Gestão Jangaz:</h3>
+                <div className="individual-benefit">
+                  <ClipboardText size={64} color="#ffffff" weight="regular" />
+                  <p>Previsibilidade das próximas entregas</p>
                 </div>
-                <ul>
-                  <li>Direção experiente e capacitada</li>
-                  <li>Resposta rápida aos desafios da operação</li>
-                  <li>Comprometimento com a performance do cliente</li>
-                </ul>
+                <div className="individual-benefit">
+                  <Warning size={64} color="#ffffff" weight="regular" />
+                  <p>Alertas de anomalias operacionais</p>
+                </div>
+                <div className="individual-benefit">
+                  <MapPinLine size={64} color="#ffffff" weight="regular" />
+                  <p>Check-in e Check-out via geolocalização</p>
+                </div>
+                <div className="individual-benefit">
+                  <CheckCircle size={64} color="#ffffff" weight="regular" />
+                  <p>Status de entregas atualizado em tempo real</p>
+                </div>
+                <div className="individual-benefit">
+                  <ListChecks size={64} color="#ffffff" weight="regular" />
+                  <p>Gestão de ocorrências sistematizadas</p>
+                </div>
+                <div className="individual-benefit">
+                  <Thermometer size={64} color="#ffffff" weight="regular" />
+                  <p>Rastreabilidade de temperatura (quando necessário)</p>
+                </div>
+                <div className="individual-benefit">
+                  <FileText size={64} color="#ffffff" weight="regular" />
+                  <p>
+                    Comprovante de entrega digital com assinatura + coordenadas
+                  </p>
+                </div>
+                <div className="individual-benefit">
+                  <ChartBar size={64} color="#ffffff" weight="regular" />
+                  <p>Painéis visuais com indicadores logísticos atualizados</p>
+                </div>
               </div>
-            </div>
-          </ContentShowcase>
+            </ContentShowcase>
+            <ContentShowcase
+              src={illustration6}
+              isReversed={true}
+              isLighter={true}
+            >
+              <h2>Gerenciamento de Risco e Gestão Ótima</h2>
+              <p>
+                Aliamos tecnologia, gestão e experiência para garantir mais
+                segurança e menos imprevistos em toda a cadeia logística. Com
+                uma liderança atuante e estrutura de apoio especializada,
+                antecipamos riscos e entregamos soluções.
+              </p>
+              <div className="management-risk-container">
+                <div>
+                  <div className="title-icon-container">
+                    <WarningCircle size={64} color="#ffffff" weight="regular" />
+                    <h3>Gerenciamento de Risco:</h3>
+                  </div>
+                  <ul>
+                    <li>Equipe especializada em segurança e rastreamento </li>
+                    <li>Monitoramento ativo da frota e das operações </li>
+                    <li>Prevenção contra perdas e incidentes</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="title-icon-container">
+                    <Truck size={64} color="#ffffff" weight="regular" />
+                    <h3>Gestão Jangaz:</h3>
+                  </div>
+                  <ul>
+                    <li>Direção experiente e capacitada</li>
+                    <li>Resposta rápida aos desafios da operação</li>
+                    <li>Comprometimento com a performance do cliente</li>
+                  </ul>
+                </div>
+              </div>
+            </ContentShowcase>
+          </div>
         </main>
         {/* location section*/}
         <section id="location" className="ultrawide-responsiveness">
@@ -365,7 +400,6 @@ function App() {
           </div>
         </section>
       </div>
-
       <footer className="footer-container">
         <ul className="footer-nav">
           <li>

@@ -1,7 +1,17 @@
 .section-container {
   display: flex;
-  padding: 0 15rem;
-  padding-bottom: 12.5rem;
+  padding: 8rem 15rem;
+}
+
+.lighter-color {
+  background: #124a8c;
+}
+
+@media (min-width: 1921px) {
+  .section-container {
+    padding-left: 35rem;
+    padding-right: 35rem;
+  }
 }
 
 .section-container h2 {

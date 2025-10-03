@@ -4,11 +4,19 @@ interface ContentShowcaseProps {
   children: React.ReactNode;
   src: string;
   isReversed: boolean;
+  isLighter: boolean;
 }
 
-function ContentShowcase({ children, src, isReversed }: ContentShowcaseProps) {
+function ContentShowcase({
+  children,
+  src,
+  isReversed,
+  isLighter,
+}: ContentShowcaseProps) {
   return (
-    <section className="section-container">
+    <section
+      className={`section-container ${isLighter ? "lighter-color" : ""}`}
+    >
       {isReversed ? (
         <>
           <div className="image-content-reversed">
