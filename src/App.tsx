@@ -121,7 +121,7 @@ function App() {
                 </p>
                 <div className="icon-container">
                   <div className="icon-item">
-                    <Package size={80} color={"#fff"} />
+                    <Package size={80} className="icon-mobile" color={"#fff"} />
                     <div className="icon-text-group">
                       <p>
                         <b>1000</b> <br />
@@ -130,7 +130,7 @@ function App() {
                     </div>
                   </div>
                   <div className="icon-item">
-                    <Truck size={80} color={"#fff"} />
+                    <Truck size={80} className="icon-mobile" color={"#fff"} />
                     <div className="icon-text-group">
                       <p>
                         <b>7</b> <br />
@@ -139,11 +139,15 @@ function App() {
                     </div>
                   </div>
                   <div className="icon-item">
-                    <MapPin size={80} color={"#fff"} />
+                    <MapPin size={80} className="icon-mobile" color={"#fff"} />
                     <p>Pátio amplo, seguro e pavimentado</p>
                   </div>
                   <div className="icon-item">
-                    <VideoCamera size={80} color={"#fff"} />
+                    <VideoCamera
+                      size={80}
+                      className="icon-mobile"
+                      color={"#fff"}
+                    />
                     <p>Monitoramento 24h por câmeras</p>
                   </div>
                 </div>
