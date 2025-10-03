@@ -7,16 +7,9 @@ interface ContentShowcaseProps {
   isLighter: boolean;
 }
 
-function ContentShowcase({
-  children,
-  src,
-  isReversed,
-  isLighter,
-}: ContentShowcaseProps) {
+function ContentShowcase({ children, src, isReversed }: ContentShowcaseProps) {
   return (
-    <section
-      className={`section-container ${isLighter ? "lighter-color" : ""}`}
-    >
+    <section className="section-container">
       {isReversed ? (
         <>
           <div className="image-content-reversed">
