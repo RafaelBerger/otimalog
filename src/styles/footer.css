@@ -45,3 +45,27 @@
 .footer-copy p {
   text-align: center;
 }
+
+@media (max-width: 440px) {
+  .footer-nav {
+    padding: 0;
+    flex-direction: column; /* empilha os links verticalmente */
+    gap: 2rem; /* reduz o espaço entre os links */
+    align-items: center; /* centraliza os links */
+  }
+
+  .footer-copy {
+    width: 90%; /* ocupa quase toda largura da tela */
+    flex-direction: column; /* se tiver mais elementos, empilha verticalmente */
+    padding-top: 1rem; /* espaço entre nav e copy */
+  }
+
+  .footer-copy p {
+    font-size: 0.9rem; /* reduz fonte para mobile */
+  }
+
+  .footer-container {
+    gap: 1.5rem;
+    padding-bottom: 8rem;
+  }
+}
