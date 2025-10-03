@@ -37,3 +37,9 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+@media (max-width: 440px) {
+  li {
+    margin-bottom: 0.5rem;
+  }
+}

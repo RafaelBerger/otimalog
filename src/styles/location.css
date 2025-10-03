@@ -67,10 +67,6 @@
     padding-left: 1.5rem;
   }
 
-  .location-info-half ul li {
-    margin-bottom: 0.5rem;
-  }
-
   .map-iframe {
     width: 90vw;
     height: 60vh;

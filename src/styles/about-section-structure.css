@@ -1,3 +1,8 @@
+.section-container {
+  display: flex;
+  padding: 8rem 15rem;
+}
+
 @media (min-width: 1921px) {
   .section-container {
     /* responsividade do ultrawide */
@@ -5,12 +10,6 @@
     padding-right: 35rem;
   }
 }
-
-.section-container {
-  display: flex;
-  padding: 8rem 15rem;
-}
-
 .lighter-color {
   background: #124a8c;
 }

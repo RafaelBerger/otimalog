@@ -114,6 +114,9 @@
     gap: 1.5rem;
     margin: 0;
   }
+  .navbar__menu li {
+    margin: 0;
+  }
 
   .navbar__item {
     position: relative;
