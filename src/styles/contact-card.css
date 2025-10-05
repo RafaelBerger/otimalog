@@ -47,3 +47,25 @@
   background: var(--primary-color);
   color: #ffffff;
 }
+
+@media (max-width: 440px) {
+  .contact-card-container {
+    width: 65%;
+    padding: 2rem 1.5rem; /* padding interno menor */
+  }
+
+  .contact-card-texts h3 {
+    font-size: 1.2em; /* título menor */
+    text-align: center;
+  }
+
+  .contact-card-texts p {
+    font-size: 1rem; /* texto menor */
+    text-align: center;
+  }
+
+  .contact-card-container a {
+    font-size: 1rem; /* fonte menor */
+    height: 3rem; /* mantém altura do botão */
+  }
+}

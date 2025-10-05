@@ -1,0 +1,13 @@
+#body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1921px) {
+  #location {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}

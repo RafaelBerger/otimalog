@@ -1,7 +1,17 @@
 .section-container {
   display: flex;
-  padding: 0 10rem;
-  padding-bottom: 12.5rem;
+  padding: 8rem 15rem;
+}
+
+@media (min-width: 1921px) {
+  .section-container {
+    /* responsividade do ultrawide */
+    padding-left: 35rem;
+    padding-right: 35rem;
+  }
+}
+.lighter-color {
+  background: #124a8c;
 }
 
 .section-container h2 {
@@ -19,7 +29,7 @@
 }
 
 .text-content p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
@@ -43,4 +53,50 @@
 
 .image-content img {
   max-width: 600px;
+}
+
+@media (max-width: 440px) {
+  .section-container {
+    flex-direction: column;
+    padding: 5rem 0.5rem;
+    gap: 5rem;
+  }
+
+  .text-content,
+  .image-content,
+  .image-content-reversed {
+    flex: unset;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    order: 2;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* Espaço entre blocos de texto */
+    order: 1;
+  }
+
+  .image-content img,
+  .image-content-reversed img {
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .text-content h2 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
 }

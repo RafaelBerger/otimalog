@@ -11,7 +11,7 @@
   --primary-color: #042f62;
   --secondary-color: #fdfaf6;
   --primary-text-color: #ffffff;
-  --secondary-text-color: #000000;
+  --secondary-text-color: #042f62;
 
   color: var(--secondary-color);
   background-color: var(--primary-color);
@@ -34,4 +34,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media (max-width: 440px) {
+  li {
+    margin-bottom: 0.5rem;
+  }
 }

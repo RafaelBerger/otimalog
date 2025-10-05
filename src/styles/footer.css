@@ -1,0 +1,71 @@
+.footer-container {
+  width: 100vw;
+
+  padding: 3rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-nav li {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer-nav li:hover {
+  transition: color 0.3s;
+  color: #0e5fc2;
+}
+
+.footer-nav li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem 0.5rem;
+}
+
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-top: solid 1px var(--primary-color);
+}
+
+.footer-copy p {
+  text-align: center;
+}
+
+@media (max-width: 440px) {
+  .footer-nav {
+    padding: 0;
+    flex-direction: column; /* empilha os links verticalmente */
+    gap: 2rem; /* reduz o espaço entre os links */
+    align-items: center; /* centraliza os links */
+  }
+
+  .footer-copy {
+    width: 90%; /* ocupa quase toda largura da tela */
+    flex-direction: column; /* se tiver mais elementos, empilha verticalmente */
+    padding-top: 1rem; /* espaço entre nav e copy */
+  }
+
+  .footer-copy p {
+    font-size: 0.9rem; /* reduz fonte para mobile */
+  }
+
+  .footer-container {
+    gap: 1.5rem;
+    padding-bottom: 8rem;
+  }
+}
