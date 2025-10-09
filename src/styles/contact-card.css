@@ -44,8 +44,8 @@
 }
 
 .contact-card-container a:hover {
-  background: var(--primary-color);
-  color: #ffffff;
+  background: #fff;
+  color: #042f62;
 }
 
 @media (max-width: 440px) {

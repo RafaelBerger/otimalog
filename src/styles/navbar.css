@@ -48,7 +48,7 @@
 
 /* Hover do link */
 .navbar__link:hover {
-  color: #ffffff;
+  color: #042f62;
 }
 
 .navbar__link:hover span,
@@ -76,7 +76,7 @@
   left: 50%;
   width: 3.5rem;
   height: 3.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #fff;
   border-radius: 17.5px;
   opacity: 0;
   transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
