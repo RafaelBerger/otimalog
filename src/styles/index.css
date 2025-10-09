@@ -8,10 +8,10 @@
   box-sizing: border-box;
   line-height: 1.5;
 
-  --primary-color: #042f62;
-  --secondary-color: #fdfaf6;
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #042f62;
+  --primary-color: #ffffff;
+  --secondary-color: #042f62;
+  --primary-text-color: #042f62;
+  --secondary-text-color: #ffffff;
 
   color: var(--secondary-color);
   background-color: var(--primary-color);

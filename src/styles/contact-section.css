@@ -1,7 +1,8 @@
 .contact-section-container {
   display: flex;
-  padding: 0 10rem;
-  padding-bottom: 12.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 12.5rem 10rem;
 }
 
 .contact-text-half {

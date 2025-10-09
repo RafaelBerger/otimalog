@@ -25,7 +25,7 @@
 
 .footer-nav li:hover {
   transition: color 0.3s;
-  color: #0e5fc2;
+  color: #e0e0e0;
 }
 
 .footer-nav li a {

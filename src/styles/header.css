@@ -102,6 +102,7 @@
     position: relative;
     z-index: 1;
     font-size: 3vw; /* Escala geral para fontes */
+    color: #fff; /* texto branco */
   }
 
   .header-info {
@@ -115,6 +116,7 @@
     flex-direction: column;
     padding-top: 2vw;
     padding-bottom: 2vw;
+    color: #fff; /* texto branco */
   }
 
   .header-presentation {
@@ -123,6 +125,7 @@
     gap: 10vw;
     align-items: center;
     width: 100%;
+    color: #fff; /* texto branco */
   }
 
   .header-presentation h1 {
@@ -130,6 +133,7 @@
     padding: 0 0.5rem;
     text-align: center;
     word-break: break-word;
+    color: #fff; /* título branco */
   }
 
   .header-presentation p {
@@ -137,6 +141,7 @@
     padding: 0 1.5rem;
     text-align: justify;
     word-break: break-word;
+    color: #fff; /* parágrafo branco */
   }
 
   .header-contact-btn {
@@ -155,6 +160,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff; /* texto do botão branco */
+    border-color: #fff; /* borda do botão branca */
+  }
+
+  .header-contact-btn a:hover {
+    border-color: #042f62;
   }
 
   .header-image {
@@ -184,8 +195,9 @@
     z-index: 0;
     pointer-events: none;
   }
-
-  /* Adicione um espaçamento extra após o header para empurrar a próxima seção para baixo */
+  .header-presentation img {
+    width: 60%;
+  }
 }
 
 @media (max-height: 740px) {
@@ -194,9 +206,6 @@
     gap: 2vw;
     align-items: center;
     width: 100%;
-  }
-
-  .header-presentation img {
-    width: 60%;
+    color: #fff;
   }
 }

@@ -19,7 +19,7 @@ function ContactCard({
 }: ContactCardProps) {
   return (
     <div className="contact-card-container">
-      {<Icon size={50} color="#042f62" weight="regular" />}
+      {<Icon size={50} color="#ffffff" weight="regular" />}
       <div className="contact-card-texts">
         <h3>{contactMethod}</h3>
         <p>{contactMethodInfo}</p>
