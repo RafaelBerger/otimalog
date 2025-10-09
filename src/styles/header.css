@@ -1,7 +1,6 @@
 .app-header {
   display: flex;
   height: 100vh;
-  padding-bottom: 10rem;
 }
 
 .header-info {
@@ -13,7 +12,7 @@
 }
 
 .header-presentation {
-  padding-left: 10rem;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,13 +40,9 @@
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
+  padding: 0 6rem;
   margin: 0;
-  padding: 0 3rem;
   color: var(--primary-text-color);
-}
-
-.header-contact-btn {
-  padding-left: 10rem;
 }
 
 .header-contact-btn a {
@@ -56,8 +51,8 @@
   align-items: center;
   text-decoration: none;
 
-  width: 80%;
-  height: 3rem;
+  width: 100%;
+  height: 3.5rem;
   padding: 0 1.5rem;
   color: var(--secondary-color);
   border-radius: 5px;
@@ -75,7 +70,7 @@
   color: var(--primary-color);
 }
 
-.header-image {
+/* .header-image {
   flex: 1;
   position: relative;
   overflow: hidden;
@@ -89,123 +84,73 @@
 
   border-radius: 25px;
   object-fit: cover;
-}
+} */
 
 @media (max-width: 440px) {
   .app-header {
+    display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    height: 100dvh;
-    padding-bottom: 2rem;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    z-index: 1;
-    font-size: 3vw; /* Escala geral para fontes */
-    color: #fff; /* texto branco */
+    height: 100vh;
+    padding: 0 0 5rem 0;
   }
 
   .header-info {
-    width: 100vw;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15vw;
-    position: relative;
-    z-index: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    color: #fff; /* texto branco */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
   }
 
   .header-presentation {
-    padding-top: 1vw;
-    padding-left: 0;
-    gap: 10vw;
+    width: 95vw; /* ocupa quase toda a tela */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    color: #fff; /* texto branco */
+  }
+  .header-presentation img {
+    width: 70%; /* ocupa quase toda a tela */
   }
 
   .header-presentation h1 {
-    font-size: clamp(1.2rem, 6vw, 2rem);
-    padding: 0 0.5rem;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
     text-align: center;
-    word-break: break-word;
-    color: #fff; /* título branco */
+    line-height: 1.2;
+    padding: 0 0.5rem;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .header-presentation p {
-    font-size: clamp(0.8rem, 3vw, 1.1rem);
-    padding: 0 1.5rem;
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+    line-height: 1.4;
+    padding: 0 1rem;
     text-align: justify;
-    word-break: break-word;
-    color: #fff; /* parágrafo branco */
-  }
-
-  .header-contact-btn {
-    padding-left: 0;
-    width: 50%;
-    margin-top: 1vw;
-    display: flex;
-    justify-content: center;
+    margin: 0;
   }
 
   .header-contact-btn a {
-    width: 100%;
-    min-width: unset;
-    font-size: clamp(0.9rem, 3vw, 1em);
+    width: 80%; /* ocupa boa parte da tela */
+    font-size: clamp(1rem, 4vw, 1.2em);
     padding: 0 1rem;
+    height: 3rem;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff; /* texto do botão branco */
-    border-color: #fff; /* borda do botão branca */
-  }
-
-  .header-contact-btn a:hover {
-    border-color: #042f62;
-  }
-
-  .header-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    min-height: 150px;
-    max-height: 100dvh;
-    margin-top: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .header-image img {
-    position: absolute;
-    width: 120vw; /* aumenta a largura para esconder o border-radius */
-    height: 100%;
-    left: -10vw; /* move um pouco para a esquerda, mas não tanto */
-    top: 0;
-    object-fit: cover;
-    object-position: 10% center; /* foca mais à esquerda, mas não totalmente */
-    border-radius: 0 !important;
-    filter: brightness(0.4);
-    display: block;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .header-presentation img {
-    width: 60%;
   }
 }
-
-@media (max-height: 740px) {
+@media (min-height: 740px) {
   .header-presentation {
-    padding-left: 0;
-    gap: 2vw;
+    height: 80%;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    color: #fff;
+    justify-content: flex-start;
+  }
+  .header-info {
+    gap: 0rem;
   }
 }

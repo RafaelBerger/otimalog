@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" zoomAndPan="magnify" viewBox="0 0 1440 809.999993" height="1080" preserveAspectRatio="xMidYMid meet" version="1.0"><rect x="-144" width="1728" fill="#ffffff" y="-80.999999" height="971.999992" fill-opacity="1"/><rect x="-144" width="1728" fill="#ffffff" y="-80.999999" height="971.999992" fill-opacity="1"/><path fill="#3381a8" d="M 1.078125 539.972656 C 590.597656 963.160156 936.84375 145.957031 1466.007812 539.972656 L 1466.007812 812.5625 L 1.078125 812.5625 Z M 1.078125 539.972656 " fill-opacity="1" fill-rule="evenodd"/><path fill="#15597f" d="M 1.078125 539.972656 C 590.597656 915.824219 936.84375 282.539062 1466.007812 632.363281 L 1466.007812 812.5625 L 1.078125 812.5625 Z M 1.078125 539.972656 " fill-opacity="1" fill-rule="evenodd"/><path fill="#112b40" d="M 1.078125 661.25 C 590.597656 1037.101562 936.84375 282.539062 1466.007812 632.363281 L 1466.007812 812.5625 L 1.078125 812.5625 Z M 1.078125 661.25 " fill-opacity="1" fill-rule="evenodd"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" viewBox="0 0 1440 810" height="1080" preserveAspectRatio="xMidYMid meet" version="1.0">
+  <rect x="-144" width="1728" fill="#ffffff" y="-81" height="972" fill-opacity="1"/>
+  
+  <!-- Camada mais clara (topo) -->
+  <path fill="#c0c0c0" d="M 1.078125 539.972656 C 590.597656 963.160156 936.84375 145.957031 1466.007812 539.972656 L 1466.007812 812.5625 L 1.078125 812.5625 Z" fill-opacity="1" fill-rule="evenodd"/>
+  
+  <!-- Camada intermediária (azul levemente mais claro) -->
+  <path fill="#0b3f78" d="M 1.078125 539.972656 C 590.597656 915.824219 936.84375 282.539062 1466.007812 632.363281 L 1466.007812 812.5625 L 1.078125 812.5625 Z" fill-opacity="1" fill-rule="evenodd"/>
+  
+  <!-- Camada mais escura (base) -->
+  <path fill="#042f62" d="M 1.078125 661.25 C 590.597656 1037.101562 936.84375 282.539062 1466.007812 632.363281 L 1466.007812 812.5625 L 1.078125 812.5625 Z" fill-opacity="1" fill-rule="evenodd"/>
+</svg>

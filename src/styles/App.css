@@ -1,3 +1,17 @@
+.bg-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 100vw;
+  height: 80%;
+
+  background: url("/src/assets/5.svg") no-repeat center/cover;
+  transform: translateX(-50%) rotateX(180deg) rotateY(180deg);
+  opacity: 0.9; /* opcional */
+  z-index: -1;
+}
 .bg-1::before {
   content: "";
   position: absolute;
@@ -5,7 +19,7 @@
   left: 50%;
 
   width: 126vw;
-  height: 100%; /* 👈 controla o tamanho vertical da faixa */
+  height: 100%;
 
   background: url("/src/assets/6.svg") no-repeat center/cover;
   transform: translateX(-50%) rotateX(180deg) rotateY(180deg);
@@ -18,8 +32,8 @@
   top: 0;
   left: 50%;
 
-  width: 100vw;
-  height: 120%;
+  width: 145vw;
+  height: 100%;
 
   background: url("/src/assets/6.svg") no-repeat center/cover;
   transform: translateX(-50%) rotateY(0deg);
@@ -90,5 +104,10 @@
 
   .bg-5::before {
     display: none;
+  }
+
+  .bg-header::before {
+    width: 100vw;
+    height: 80%; /* 👈 controla o tamanho vertical da faixa */
   }
 }

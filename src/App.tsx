@@ -14,7 +14,7 @@ import illustration4 from "./assets/illustration-4.svg";
 import illustration5 from "./assets/illustration-5.svg";
 import illustration6 from "./assets/illustration-6.svg";
 
-import headerImg from "./assets/header-img.png";
+// import headerImg from "./assets/header-img.png";
 
 import ContentShowcase from "./components/ContentShowcase";
 import ContactCard from "./components/ContactCard";
@@ -45,31 +45,33 @@ function App() {
   return (
     <>
       <Navbar />
-      <header className="app-header" id="home">
-        <div className="header-info">
-          <div className="header-presentation">
-            <img src={logo} alt="LOGO" />
-            <h1>
-              Conectando distâncias,
-              <br /> Acelerando negócios
-            </h1>
-            <p>
-              Mais que transporte, a Otima.log atua como parceira estratégica de
-              empresas que valorizam agilidade, rastreabilidade e controle sobre
-              suas operações logísticas. Especializada em operação de fretes
-              fracionados, a empresa conta com uma estrutura moderna e um time
-              altamente qualificado, oferecendo soluções completas para quem
-              quer crescer com eficiência.
-            </p>
+      <div className="bg-header">
+        <header className="app-header" id="home">
+          <div className="header-info">
+            <div className="header-presentation">
+              <img src={logo} alt="LOGO" />
+              <h1>
+                Conectando distâncias,
+                <br /> Acelerando negócios
+              </h1>
+              <p>
+                Mais que transporte, a Otima.log atua como parceira estratégica
+                de empresas que valorizam agilidade, rastreabilidade e controle
+                sobre suas operações logísticas. Especializada em operação de
+                fretes fracionados, a empresa conta com uma estrutura moderna e
+                um time altamente qualificado, oferecendo soluções completas
+                para quem quer crescer com eficiência.
+              </p>
+            </div>
+            <div className="header-contact-btn">
+              <a href="#contact">Nos Contate</a>
+            </div>
           </div>
-          <div className="header-contact-btn">
-            <a href="#contact">Nos Contate</a>
-          </div>
-        </div>
-        <div className="header-image">
+          {/* <div className="header-image">
           <img src={headerImg} alt="Truck Image" />
-        </div>
-      </header>
+        </div> */}
+        </header>
+      </div>
 
       <div id="body-container">
         {/* about section */}
