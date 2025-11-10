@@ -1,5 +1,6 @@
 import "./styles/header.css";
 import "./styles/App.css";
+import "./styles/history.css";
 import "./styles/about-section.css";
 import "./styles/location.css";
 import "./styles/contact-section.css";
@@ -59,7 +60,7 @@ function App() {
               </div>
             </div>
             <div className="header_contact_btn">
-              <a href="#contact">HISTORIA</a>
+              <a href="#history">HISTORIA</a>
               <a href="#contact">SERVIÇOS</a>
               <a href="#contact">SAIBA MAIS</a>
               <a href="#contact">SOLICITE SUA COTAÇÃO</a>
@@ -71,6 +72,37 @@ function App() {
       <div id="body-container">
         {/* about section */}
         <main id="about" className="ultrawide-responsiveness">
+          {/* secao da HISTORIA */}
+          <div className="history_container" id="history">
+            <div className="image_container">
+              <img src={logo} className="history_image" alt="LOGO" />
+            </div>
+            <div className="history_text_container">
+              <h1>NOSSA HISTORIA:</h1>
+              <p>
+                Administrada por profissionais com mais de quatro décadas de
+                experiência em logística, a empresa nasceu com um propósito
+                claro: elevar o padrão de qualidade e segurança no transporte de
+                cargas. Nossa primeira missão foi atender cargas lotação, com
+                todo o rigor exigido por clientes de alto nível e formadores de
+                opinião. <br /> <br />
+                Desde então, construímos uma operação reconhecida pela
+                excelência em cada detalhe. Atualmente ampliando sua atuação
+                para o segmento de redespacho, atendendo inumeros clientes e
+                parceiros com Transportadoras Amazon, Fedex, Magalhães,
+                Rodonaves e inumeros outros embarcadores. <br /> <br />{" "}
+                Transportamos praticamente todo tipo de mercadoria e volumes com
+                velocidade de transferencia e entrega em centenas de destinos.{" "}
+                <br /> <br /> Nossa central com armazém bem localizado fica em
+                Guarulhos. <br /> <br />
+              </p>
+              <b>
+                Cada quilômetro percorrido reforça nosso compromisso com a
+                integridade da carga e a confiança do cliente.
+              </b>
+            </div>
+          </div>
+          {/* secao sobre */}
           <h2 className="main-title">Sobre nós</h2>
           <ContentShowcase
             src={illustration1}

@@ -9,7 +9,7 @@
 
   background: url("/src/assets/5.svg") no-repeat center/cover;
   transform: translateX(-50%) rotateX(180deg) rotateY(180deg);
-  opacity: 0.9; /* opcional */
+  opacity: 0.9;
   z-index: -1;
 }
 .bg-1::before {
