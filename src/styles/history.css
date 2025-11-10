@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 7rem 0;
+  padding: 3rem 0;
+  margin-top: 8rem;
 
   background-image: url("/src/assets/8.svg");
   background-repeat: no-repeat;
@@ -49,6 +50,7 @@
 @media (max-width: 480px) {
   .history_container {
     background-image: none;
+    margin-top: 0;
   }
 
   .image_container {
