@@ -6,8 +6,17 @@ import "./styles/location.css";
 import "./styles/footer.css";
 import "./styles/responsive.css";
 import "./styles/contact.css";
+import "./styles/services.css";
 
 import logo from "./assets/logo.svg";
+
+// icones e imagens usados na seção de serviços
+import cameraIcon from "./assets/security-camera-fill.svg";
+import truckIcon from "./assets/truck-fill.svg";
+import mapPinIcon from "./assets/map-pin-area-fill.svg";
+import warehouseIcon from "./assets/warehouse-fill.svg";
+import mapImage from "./assets/map.svg";
+import mapInfoImage from "./assets/map-info.svg";
 
 // import ContentShowcase from "./components/ContentShowcase";
 import ContactCard from "./components/ContactCard";
@@ -79,17 +88,18 @@ function App() {
               </b>
             </div>
           </section>
-          {/* TODO: Fazer a secao nossos servicos */}
-          <section>
-            <div>
+          {/* TODO: falta apenas estilizar parte da direita com as imagens e em
+           seguida deixar responsivo */}
+          <section className="services_section">
+            <div className="services_title_container">
               <h1>NOSSOS SERVIÇOS:</h1>
               <p>
                 Soluções logísticas ponta a ponta — com o DNA da eficiência.
               </p>
             </div>
 
-            <div>
-              <div>
+            <div className="services_content_container">
+              <div className="left_service_content_container">
                 <h2>Redespacho & Cross Docking</h2>
                 <ul>
                   <li>Frota adequada com varias tipologias de veiculos;</li>
@@ -100,40 +110,41 @@ function App() {
                   <li>Agilidade nas entregas;</li>
                   <li>Gerenciamento de risco 24/7;</li>
                 </ul>
-                <div>
-                  <div>
-                    <img src="" alt="ICONE" />
+                <div className="icons_service_container">
+                  <div className="icon_container">
+                    <img src={truckIcon} alt="ICONE" />
                     <p>
                       Frota adequada <br /> para distribuição
                     </p>
                   </div>
-                  <div>
-                    <img src="" alt="ICONE" />
+                  <div className="icon_container">
+                    <img src={mapPinIcon} alt="ICONE" />
                     <p>
                       Pátio amplo,
                       <br /> seguro e <br />
                       pavimentado
                     </p>
                   </div>
-                  <div>
-                    <img src="" alt="ICONE" />
+                  <div className="icon_container">
+                    <img src={cameraIcon} alt="ICONE" />
                     <p>
                       Monitoramento <br />
                       24h por <br />
                       câmeras
                     </p>
                   </div>
-                  <div>
-                    <img src="" alt="ICONE" />
+                  <div className="icon_container">
+                    <img src={warehouseIcon} alt="ICONE" />
                     <p>
-                      Ampla área de <br /> armazenagem <br /> com 7 docas.
+                      Ampla área de <br /> armazenagem <br /> com 7 docas
                     </p>
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="right_service_content_container">
                 <div>
-                  <img src="" alt="MAPA" />
+                  <img src={mapImage} alt="MAPA" id="mapImage" />
+                  <img src={mapInfoImage} alt="MAPA" id="mapInfoImage" />
                 </div>
                 <div>
                   <p>
