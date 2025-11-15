@@ -1,12 +1,14 @@
-import "./styles/header.css";
 import "./styles/App.css";
-import "./styles/history.css";
 import "./styles/about-section.css";
 import "./styles/location.css";
 import "./styles/footer.css";
 import "./styles/responsive.css";
-import "./styles/contact.css";
+
+import "./styles/header.css";
+import "./styles/history.css";
 import "./styles/services.css";
+import "./styles/expedition-technology.css";
+import "./styles/contact.css";
 
 import logo from "./assets/logo.svg";
 
@@ -152,6 +154,43 @@ function App() {
                     Rondonia -Em breve: MS, MT, GO, DF, TO.
                   </p>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          {/* TODO: falta apenas responsividade e alterar a imagem*/}
+          <section className="expedition_technology_section">
+            <h1>EXPEDIÇÃO COM TECNOLOGIA</h1>
+            <div className="expedition_technology_text_container">
+              <h4>Processos rastreáveis e automatizados</h4>
+              <p>Automação que garante precisão.</p>
+              <p>
+                Utilizamos o sistema SSW com leitura de código de barras,
+                rastreabilidade <br />
+                completa e processos automatizados — do recebimento à expedição.{" "}
+                <br /> Resultado? Mais agilidade, menos erros, total controle
+                sobre cada item.
+              </p>
+            </div>
+            <div className="expedition_technology_features_container">
+              <div>
+                <img src={mapImage} alt="" />
+              </div>
+              <div>
+                <ul>
+                  <li className="li_feature_item">
+                    <span>1</span>{" "}
+                    <p>Sistema SSW com leitura de código de barras</p>
+                  </li>
+                  <li className="li_feature_item">
+                    <span>2</span>
+                    <p>Rastreabilidade total das mercadorias</p>
+                  </li>
+                  <li className="li_feature_item">
+                    <span>3</span>
+                    <p>Processos automatizados de recebimento e expedição</p>
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
