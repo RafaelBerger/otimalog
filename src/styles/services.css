@@ -1,17 +1,7 @@
-#mapImage {
-  width: 200px;
-  height: 200px;
-}
-
-#mapInfoImage {
-  width: 200px;
-  height: 200px;
-}
-
 .services_section {
-  padding: 6rem 0;
+  padding: 0;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +9,7 @@
 
   background-image: url("/src/assets/1.svg");
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: 135%;
   background-position: center;
 }
 
@@ -111,4 +101,114 @@
 
 .right_service_content_container {
   width: 45%;
+}
+
+.map_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#mapImage {
+  width: 31.25rem;
+  height: 31.25rem;
+  /* background-color: #d9e6ed; */
+  border-radius: 50px;
+  background-image: linear-gradient(245deg, #ededf0, white);
+}
+
+#mapInfoImage {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.map_text_container {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.map_text_container p {
+  color: gray;
+  width: 50%;
+  text-align: center;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+@media (max-width: 440px) {
+  .services_section {
+    height: auto;
+    margin-top: 4rem;
+    padding: 0;
+    background-image: none; /* Remove o fundo no mobile */
+  }
+
+  .services_title_container > h1 {
+    font-size: 2rem;
+  }
+
+  .services_title_container > p {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .services_content_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .left_service_content_container,
+  .right_service_content_container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .left_service_content_container > h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .left_service_content_container > ul {
+    font-size: 1.1rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .icons_service_container {
+    display: grid;
+    grid-template-columns: 150px 150px;
+  }
+
+  .icons_service_container img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #mapImage {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 20px;
+  }
+
+  #mapInfoImage {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .map_container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map_text_container {
+    font-size: 1.1rem;
+  }
+
+  .map_text_container p {
+    width: 90%;
+    padding: 0;
+  }
 }

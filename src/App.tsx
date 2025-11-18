@@ -11,6 +11,7 @@ import "./styles/expedition-technology.css";
 import "./styles/contact.css";
 
 import logo from "./assets/logo.svg";
+import logoNew from "./assets/logo-novo.svg";
 
 // icones e imagens usados na seção de serviços
 import cameraIcon from "./assets/security-camera-fill.svg";
@@ -63,7 +64,7 @@ function App() {
           {/* secao da HISTORIA */}
           <section className="history_container" id="history">
             <div className="image_container">
-              <img src={logo} className="history_image" alt="LOGO" />
+              <img src={logoNew} className="history_image" alt="LOGO" />
             </div>
             <div className="history_text_container">
               <h1>NOSSA HISTORIA:</h1>
@@ -144,11 +145,11 @@ function App() {
                 </div>
               </div>
               <div className="right_service_content_container">
-                <div>
-                  <img src={mapImage} alt="MAPA" id="mapImage" />
+                <div className="map_container">
                   <img src={mapInfoImage} alt="MAPA" id="mapInfoImage" />
+                  <img src={mapImage} alt="MAPA" id="mapImage" />
                 </div>
-                <div>
+                <div className="map_text_container">
                   <p>
                     Distribuição na Grande São Paulo Redespacho para Acre e
                     Rondonia -Em breve: MS, MT, GO, DF, TO.
