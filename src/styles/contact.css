@@ -12,6 +12,11 @@
   background-position: center;
 }
 
+.contact_container img {
+  width: 300px;
+  height: 300px;
+}
+
 .contact_text {
   max-width: 1181px;
   text-align: center;
@@ -42,6 +47,11 @@
   .contact_container {
     padding: 5rem 0;
     background-image: none;
+  }
+
+  .contact_container img {
+    width: 10.1563rem;
+    height: 10.1563rem;
   }
 
   .contact_text {

@@ -21,6 +21,9 @@ import warehouseIcon from "./assets/warehouse-fill.svg";
 import mapImage from "./assets/map.svg";
 import mapInfoImage from "./assets/map-info.svg";
 
+//icones usados na seção expedição com tecnologia
+import tecnologyExpeditionIcon from "./assets/tecnology-icon.svg";
+
 // import ContentShowcase from "./components/ContentShowcase";
 import ContactCard from "./components/ContactCard";
 
@@ -51,7 +54,7 @@ function App() {
             </div>
             <div className="header_contact_btn">
               <a href="#history">HISTORIA</a>
-              <a href="#contact">SERVIÇOS</a>
+              <a href="#services">SERVIÇOS</a>
               <a href="#contact">SAIBA MAIS</a>
               <a href="#contact">SOLICITE SUA COTAÇÃO</a>
             </div>
@@ -91,9 +94,7 @@ function App() {
               </b>
             </div>
           </section>
-          {/* TODO: falta apenas estilizar parte da direita com as imagens e em
-           seguida deixar responsivo */}
-          <section className="services_section">
+          <section className="services_section" id="services">
             <div className="services_title_container">
               <h1>NOSSOS SERVIÇOS:</h1>
               <p>
@@ -159,7 +160,6 @@ function App() {
             </div>
           </section>
 
-          {/* TODO: falta apenas responsividade e alterar a imagem*/}
           <section className="expedition_technology_section">
             <h1>EXPEDIÇÃO COM TECNOLOGIA</h1>
             <div className="expedition_technology_text_container">
@@ -175,7 +175,7 @@ function App() {
             </div>
             <div className="expedition_technology_features_container">
               <div>
-                <img src={mapImage} alt="" />
+                <img src={tecnologyExpeditionIcon} alt="" />
               </div>
               <div>
                 <ul>
@@ -203,7 +203,7 @@ function App() {
           className="ultrawide-responsiveness contact_container"
         >
           <div>
-            <img src={logo} alt="LOGO OTIMALOG" />
+            <img src={logoNew} alt="LOGO OTIMALOG" />
           </div>
 
           <div className="contact_text">
