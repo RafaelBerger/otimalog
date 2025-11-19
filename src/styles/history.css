@@ -6,6 +6,7 @@
   width: 100%;
   padding: 3rem 0;
   margin-top: 8rem;
+  margin-bottom: 8rem;
 
   background-image: url("/src/assets/8.svg");
   background-repeat: no-repeat;
@@ -14,7 +15,7 @@
 }
 
 .history_image {
-  width: 18.75rem;
+  width: 15rem;
 }
 
 .history_text_container {
@@ -35,6 +36,7 @@
 
 .history_text_container > h1 {
   font-size: 3rem;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -43,11 +45,20 @@
   font-size: 1.25rem;
 }
 
+.history_text_container > p {
+  font-weight: 700;
+}
+
 .history_text_container b {
   text-align: center;
+  font-weight: 800;
 }
 
 @media (max-width: 480px) {
+  .line_break_history {
+    display: none;
+  }
+
   .history_container {
     background-image: none;
     margin-top: 0;

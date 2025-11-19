@@ -1,14 +1,14 @@
 import "./styles/App.css";
-import "./styles/about-section.css";
-import "./styles/location.css";
-import "./styles/footer.css";
+
 import "./styles/responsive.css";
 
 import "./styles/header.css";
 import "./styles/history.css";
 import "./styles/services.css";
+import "./styles/tower-control.css";
 import "./styles/expedition-technology.css";
 import "./styles/contact.css";
+import "./styles/footer.css";
 
 import logo from "./assets/logo.svg";
 import logoNew from "./assets/logo-novo.svg";
@@ -24,14 +24,23 @@ import mapInfoImage from "./assets/map-info.svg";
 //icones usados na seção expedição com tecnologia
 import tecnologyExpeditionIcon from "./assets/tecnology-icon.svg";
 
-// import ContentShowcase from "./components/ContentShowcase";
-import ContactCard from "./components/ContactCard";
+//icones usados na seção torre de controle
+import tablet from "./assets/tablet-image.svg";
 
+import mobileIcon from "./assets/device-mobile.svg";
+import clipboardIcon from "./assets/clipboard-text.svg";
+import alertIcon from "./assets/warning.svg";
+import signatureIcon from "./assets/signature.svg";
+import towerMapPinIcon from "./assets/map-pin-area-fill.svg";
+import thermometerIcon from "./assets/thermometer.svg";
+import chartIcon from "./assets/chart-bar.svg";
+import incidentManagementIcon from "./assets/arrow-clockwise.svg";
+import checkIcon from "./assets/check-circle.svg";
+
+import ContactCard from "./components/ContactCard";
 import { WhatsappLogo, EnvelopeSimple } from "phosphor-react";
 
 function App() {
-  const currentYear: number = new Date().getFullYear();
-
   return (
     <>
       {/* secao hero */}
@@ -90,7 +99,8 @@ function App() {
               </p>
               <b>
                 Cada quilômetro percorrido reforça nosso compromisso com a
-                integridade da carga e a confiança do cliente.
+                integridade da carga e a confiança{" "}
+                <br className="line_break_history" /> do cliente.
               </b>
             </div>
           </section>
@@ -153,7 +163,110 @@ function App() {
                 <div className="map_text_container">
                   <p>
                     Distribuição na Grande São Paulo Redespacho para Acre e
-                    Rondonia -Em breve: MS, MT, GO, DF, TO.
+                    Rondonia <br className="services_line_breaker" /> -Em breve:
+                    MS, MT, GO, DF, TO.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="tower_control_section">
+            <div className="tower_control_header">
+              <h1>
+                TORRE DE CONTROLE <br /> E GESTÃO À VISTA
+              </h1>
+              <img src={tablet} alt="" className="tablet_img" />
+            </div>
+            <div className="tower_control_text_container">
+              <p>
+                Visibilidade total da sua operação em tempo real. <br /> Nossa
+                Torre de Controle integra tecnologia, dados e gestão para
+                monitorar entregas, prever ocorrências e agir rápido.
+              </p>
+              <p>
+                Cada movimento é rastreado, analisado e transformado em insights
+                que impulsionam performance.
+              </p>
+            </div>
+            <div className="tower_control_icons">
+              <div className="icons_upper_half">
+                <div className="single_icon_container">
+                  <img src={mobileIcon} alt="" />
+                  <p>
+                    Integração com o mobile <br /> dos motoristas
+                  </p>
+                </div>
+                <div className="single_icon_container">
+                  <img src={clipboardIcon} alt="" />
+                  <p>
+                    Previsibilidade das <br />
+                    próximas entregas
+                  </p>
+                </div>
+                <div className="single_icon_container">
+                  <img src={alertIcon} alt="" />
+                  <p>
+                    Alertas de <br /> anomalias <br />
+                    operacionais
+                  </p>
+                </div>
+                <div className="single_icon_container">
+                  <img src={signatureIcon} alt="" />
+                  <p>
+                    Comprovante de <br />
+                    entrega digital com <br />
+                    assinatura + <br />
+                    coordenadas
+                  </p>
+                </div>
+              </div>
+
+              <div className="icons_lower_half">
+                <div className="single_icon_container">
+                  <img src={towerMapPinIcon} alt="" />
+                  <p>
+                    Check-in e check-out <br /> via <br />
+                    geolocalização
+                  </p>
+                </div>
+                <div className="single_icon_container">
+                  <img src={thermometerIcon} alt="" />
+                  <p>
+                    Rastreabilidade de
+                    <br />
+                    temperatura
+                    <br />
+                    (quando
+                    <br />
+                    necessário)
+                  </p>
+                </div>
+                <div className="single_icon_container">
+                  <img src={chartIcon} alt="" />
+                  <p>
+                    Painéis visuais com
+                    <br />
+                    indicadores
+                    <br />
+                    logísticos
+                    <br />
+                    atualizados
+                  </p>
+                </div>
+                <div className="single_icon_container">
+                  <img src={incidentManagementIcon} alt="" />
+                  <p>
+                    Gestão de ocorrências
+                    <br />
+                    sistematizadas
+                  </p>
+                </div>
+                <div className="single_icon_container">
+                  <img src={checkIcon} alt="" />
+                  <p>
+                    Status de entregas <br />
+                    atualizado em tempo real
                   </p>
                 </div>
               </div>
@@ -164,7 +277,9 @@ function App() {
             <h1>EXPEDIÇÃO COM TECNOLOGIA</h1>
             <div className="expedition_technology_text_container">
               <h4>Processos rastreáveis e automatizados</h4>
-              <p>Automação que garante precisão.</p>
+              <p>
+                <b>Automação que garante precisão.</b>
+              </p>
               <p>
                 Utilizamos o sistema SSW com leitura de código de barras,
                 rastreabilidade <br />
@@ -233,28 +348,6 @@ function App() {
           </div>
         </section>
       </div>
-
-      <footer className="footer-container">
-        <ul className="footer-nav">
-          <li>
-            <a href="#home">Inicio</a>
-          </li>
-          <li>
-            <a href="#about">Sobre</a>
-          </li>
-          <li>
-            <a href="#location">Área de Atendimento</a>
-          </li>
-          <li>
-            <a href="#contact">Contato</a>
-          </li>
-        </ul>
-        <div className="footer-copy">
-          <p>
-            ©{currentYear} ÓtimaLog <br /> Todos os direitos reservados
-          </p>
-        </div>
-      </footer>
     </>
   );
 }
