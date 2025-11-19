@@ -1,0 +1,141 @@
+.expedition_technology_section {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: url("/src/assets/2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 205%;
+  background-position: bottom;
+}
+
+.expedition_technology_section > h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.expedition_technology_text_container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 7rem;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.expedition_technology_text_container > h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+.expedition_technology_text_container > p {
+  font-size: 1.5rem;
+  color: gray;
+  text-align: center;
+  margin: 0;
+}
+
+.expedition_technology_features_container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expedition_technology_features_container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.expedition_technology_features_container img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.li_feature_item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.3rem;
+}
+.li_feature_item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #266394;
+  color: #fff;
+}
+.li_feature_item p {
+  color: gray;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .expedition_technology_section {
+    height: auto;
+    padding: 0;
+    margin: 6rem 0;
+    background-image: none;
+  }
+
+  .expedition_technology_section > h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .expedition_technology_text_container {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+
+  .expedition_technology_text_container > h4 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .expedition_technology_text_container > p {
+    font-size: 1rem;
+    width: 95%;
+  }
+
+  .expedition_technology_features_container {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .expedition_technology_features_container img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .expedition_technology_features_container ul {
+    width: 100%;
+  }
+  .expedition_technology_features_container p {
+    width: 75%;
+  }
+
+  .li_feature_item {
+    font-size: 1rem;
+  }
+
+  .li_feature_item span {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
