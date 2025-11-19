@@ -38,6 +38,23 @@
 
 @media (max-width: 440px) {
   .contact-card-container {
-    width: 18.75rem;
+    width: 250px;
+    height: 200px;
+    gap: 0;
+    justify-content: space-evenly;
+  }
+
+  .contact-card-container {
+    padding: 1rem 0;
+  }
+
+  .contact-card-texts h3 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .contact-card-texts p {
+    font-size: 01em;
+    margin: 0;
   }
 }

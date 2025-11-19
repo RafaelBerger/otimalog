@@ -64,7 +64,7 @@ function App() {
             <div className="header_contact_btn">
               <a href="#history">HISTORIA</a>
               <a href="#services">SERVIÇOS</a>
-              <a href="#contact">SAIBA MAIS</a>
+              <a href="#tower-control">SAIBA MAIS</a>
               <a href="#contact">SOLICITE SUA COTAÇÃO</a>
             </div>
           </div>
@@ -171,7 +171,7 @@ function App() {
             </div>
           </section>
 
-          <section className="tower_control_section">
+          <section className="tower_control_section" id="tower-control">
             <div className="tower_control_header">
               <h1>
                 TORRE DE CONTROLE <br /> E GESTÃO À VISTA
