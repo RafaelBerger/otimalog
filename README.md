@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+#  OtimaLog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing Page desenvolvida como **Single Page Application (SPA)** utilizando React, com foco em apresentar a história da empresa, seus serviços e facilitar o contato com clientes.
 
-Currently, two official plugins are available:
+O projeto foi construído com base em um design fornecido pelo cliente, priorizando clareza, navegação simples e responsividade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🌐 Deploy
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Projeto publicado em ambiente de produção.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🔗 **Em produção** https://otimalog.com.br/
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🔗 **Demo na vercel:** https://otimalog.vercel.app/
+
+
+---
+
+## 🚀 Como rodar o projeto localmente
+
+### 1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/RafaelBerger/otimalog.git
+cd otimalog
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Instale as dependências
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### 3️⃣ Rode o projeto
+
+```bash
+npm run dev
+```
+
+
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- React  
+- CSS puro  
+
+---
+
+## 🧠 Arquitetura do Projeto
+
+- Aplicação estruturada como **SPA (Single Page Application)**  
+- Componentização visando reutilização  
+- Implementação fiel ao design fornecido pelo cliente  
+- Estruturação de layout com foco em clareza e navegação intuitiva  
+- Estilização manual com CSS puro  
+- Responsividade para diferentes tamanhos de tela  
+
+---
+
+## ⚙️ Funcionalidades
+
+- Seção institucional apresentando a empresa  
+- Apresentação de serviços  
+- Estrutura clara de navegação  
+- Layout responsivo  
+- Página otimizada para apresentação comercial  
+
+
+
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Rafael Berger**
